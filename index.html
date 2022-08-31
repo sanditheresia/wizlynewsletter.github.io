@@ -15,7 +15,326 @@
  <meta name="format-detection" content="email=no">
  <meta name="x-apple-disable-message-reformatting" />
  <title>Project Newsletter - Newsletter Comunity Building</title>
-
+ <style>
+ @media  all {
+             /* cyrillic-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 100;
+                 font-display: swap;
+                 src: url(https://fonts.gstatic.com/s/firasans/v11/va9C4kDNxMZdWfMOD5Vn9LjEYTLVdlTOr0s.woff2) format('woff2');
+                 unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+             }
+             /* cyrillic */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 100;
+                 font-display: swap;
+                 src: url(https://fonts.gstatic.com/s/firasans/v11/va9C4kDNxMZdWfMOD5Vn9LjNYTLVdlTOr0s.woff2) format('woff2');
+                 unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+             }
+             /* latin-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 100;
+                 font-display: swap;
+                 src: url(https://fonts.gstatic.com/s/firasans/v11/va9C4kDNxMZdWfMOD5Vn9LjHYTLVdlTOr0s.woff2) format('woff2');
+                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+             }
+             /* latin */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 100;
+                 font-display: swap;
+                 src: url(https://fonts.gstatic.com/s/firasans/v11/va9C4kDNxMZdWfMOD5Vn9LjJYTLVdlTO.woff2) format('woff2');
+                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+             }
+             /* cyrillic-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 300;
+                 font-display: swap;
+                 src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreSxf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+             }
+             /* cyrillic */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 300;
+                 font-display: swap;
+                 src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreQhf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+             }
+             /* latin-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 300;
+                 font-display: swap;
+                 src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreSBf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+             }
+             /* latin */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 300;
+                 font-display: swap;
+                 src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2) format('woff2');
+                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+             }
+             /* cyrillic-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 400;
+                 src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5VvmojLazX3dGTP.woff2) format('woff2');
+                 unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+             }
+             /* cyrillic */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 400;
+                 src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5Vvk4jLazX3dGTP.woff2) format('woff2');
+                 unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+             }
+             /* latin-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 400;
+                 src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5VvmYjLazX3dGTP.woff2) format('woff2');
+                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+             }
+             /* latin */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 400;
+                 src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2) format('woff2');
+                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+             }
+             /* cyrillic-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 500;
+                 src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveSxf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+             }
+             /* cyrillic */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 500;
+                 src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveQhf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+             }
+             /* latin-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 500;
+                 src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveSBf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+             }
+             /* latin */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 500;
+                 src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveRhf6Xl7Glw.woff2) format('woff2');
+                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+             }
+             /* cyrillic-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 700;
+                 src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnLK3eSxf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+             }
+             /* cyrillic */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 700;
+                 src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnLK3eQhf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+             }
+             /* latin-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 700;
+                 src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnLK3eSBf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+             }
+             /* latin */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 700;
+                 src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnLK3eRhf6Xl7Glw.woff2) format('woff2');
+                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+             }
+             /* cyrillic-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 800;
+                 font-display: swap;
+                 src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnMK7eSxf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+             }
+             /* cyrillic */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 800;
+                 font-display: swap;
+                 src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnMK7eQhf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+             }
+             /* latin-ext */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 800;
+                 font-display: swap;
+                 src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnMK7eSBf6Xl7Gl3LX.woff2) format('woff2');
+                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+             }
+             /* latin */
+             @font-face {
+                 font-family: 'Fira Sans';
+                 font-style: normal;
+                 font-weight: 800;
+                 font-display: swap;
+                 src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnMK7eRhf6Xl7Glw.woff2) format('woff2');
+                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+             }
+         }
+ 
+         html,
+         body {
+             margin: 0 !important;
+             padding: 0 !important;
+             min-height: 100% !important;
+             width: 100% !important;
+             -webkit-font-smoothing: antialiased;
+         }
+ 
+         * {
+             -ms-text-size-adjust: 100%;
+         }
+ 
+         #outlook a {
+             padding: 0;
+         }
+ 
+         .ReadMsgBody,
+         .ExternalClass {
+             width: 100%;
+         }
+ 
+         .ExternalClass,
+         .ExternalClass p,
+         .ExternalClass td,
+         .ExternalClass div,
+         .ExternalClass span,
+         .ExternalClass font {
+             line-height: 100%;
+         }
+ 
+         div[style*="margin: 14px 0"],
+         div[style*="margin: 16px 0"] {
+             margin: 0 !important;
+         }
+ 
+         table,
+         td,
+         th {
+             mso-table-lspace: 0 !important;
+             mso-table-rspace: 0 !important;
+             border-collapse: collapse;
+         }
+ 
+         body, td, th, p, div, li, a, span {
+             -webkit-text-size-adjust: 100%;
+             -ms-text-size-adjust: 100%;
+             mso-line-height-rule: exactly;
+         }
+ 
+         img {
+             border: 0;
+             outline: none;
+             line-height: 100%;
+             text-decoration: none;
+             -ms-interpolation-mode: bicubic;
+         }
+ 
+         a[x-apple-data-detectors] {
+             color: inherit !important;
+             text-decoration: none !important;
+         }
+ 
+         .pc-gmail-fix {
+             display: none;
+             display: none !important;
+         }
+ </style>
+ <style>
+ @media (max-width: 620px) {
+ .pc-project-body {min-width: 0px !important;}
+ .pc-w620-padding-20-0-0-0 {
+    padding: 20px 0px 0px 0px !important;}
+ .pc-project-container {width: 100% !important;}
+ table.pc-w620-spacing-24-0-24-0 {margin: 24px 0px 24px 0px !important;}
+ td.pc-w620-spacing-24-0-24-0,
+ th.pc-w620-spacing-24-0-24-0{margin: 0 !important;padding: 24px 0px 24px 0px !important;}
+ table.pc-w620-spacing-0-10-0-0 {margin: 0px 10px 0px 0px !important;}
+ td.pc-w620-spacing-0-10-0-0,
+ th.pc-w620-spacing-0-10-0-0{margin: 0 !important;padding: 0px 10px 0px 0px !important;}
+ .pc-w620-padding-35-35-35-35 {padding: 35px 35px 35px 35px !important;}
+ .pc-w620-fontSize-30 {font-size: 30px !important;}
+ .pc-w620-lineHeight-40 {line-height: 40px !important;}
+ .pc-w620-view-vertical,.pc-w620-view-vertical > tbody,.pc-w620-view-vertical > tbody > tr,.pc-w620-view-vertical > tbody > tr > th,.pc-w620-view-vertical > tr,.pc-w620-view-vertical > tr > th {display: block !important;width: 100% !important;}
+ .pc-w620-padding-35-50-35-50 {padding: 35px 50px 35px 50px !important;}
+ table.pc-w620-spacing-0-20-0-0 {margin: 0px 20px 0px 0px !important;}
+ td.pc-w620-spacing-0-20-0-0,
+ th.pc-w620-spacing-0-20-0-0{margin: 0 !important;padding: 0px 20px 0px 0px !important;}
+ }
+ @media (max-width: 520px) {
+ .pc-w520-padding-30-30-30-30 {padding: 30px 30px 30px 30px !important;}
+ .pc-w520-padding-30-40-30-40 {padding: 30px 40px 30px 40px !important;}
+ }
+ </style>
+ <style>
+ @media screen { @font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 400; src: url('https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZ2IGw.woff') format('woff'), url('https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZ2IHQ.woff2') format('woff2'); } @font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 500; src: url('https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBamDQ.woff') format('woff'), url('https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBamCw.woff2') format('woff2'); } @font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 700; src: url('https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriASitCBamDQ.woff') format('woff'), url('https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriASitCBamCw.woff2') format('woff2'); } @font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; src: url('https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYAZFhjg.woff') format('woff'), url('https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYAZFhiA.woff2') format('woff2'); } @font-face { font-family: 'Inter'; font-style: normal; font-weight: 800; src: url('https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYAZFhjg.woff') format('woff'), url('https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYAZFhiA.woff2') format('woff2'); } }
+ </style>
+ <!--[if mso]>
+    <style type="text/css">
+        .pc-font-alt {
+            font-family: Helvetica, Arial, sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+ <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
 </head>
 
 <body class="pc-font-alt" style="width: 100% !important;min-height: 100% !important;margin: 0 !important;padding: 0 !important;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;line-height: 1.5;color: #2D3A41;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;font-variant-ligatures: none;text-rendering: optimizeLegibility;-moz-osx-font-smoothing: grayscale;background-color: #f0f0f0;">
@@ -132,14 +451,33 @@
          <td style="padding: 0px 0px 0px 0px;">
           <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
            <tr>
-            <td valign="top" class="pc-w520-padding-30-40-30-40 pc-w620-padding-35-50-35-50" style="padding: 40px 60px 40px 60px;border-radius: 0px;background-color: #1b1b1b;" bgcolor="#1b1b1b">
+            <td valign="top" class="pc-w520-padding-30-40-30-40 pc-w620-padding-35-50-35-50" style="padding: 40px 60px 0px 60px;border-radius: 0px;background-color: #304596;" bgcolor="#1b1b1b">
              <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
               
              </table>
              <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
               <tr>
                <td class="text-block-wrapper-td" style="padding: 0px 0px 30px 0px;" valign="top" align="center">
-              
+                <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
+                 <tr class="text-block-tr">
+                  <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 0px 60px 0px 60px;mso-line-height: exactly;line-height: 36px;letter-spacing: -0.6px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #ffffff;text-align: center;" align="center">
+                   <!--insert text bellow!-->
+                   <span></span><span style="font-size: 48px; font-family: 'DM Sans', Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="b9d602b0-1ae0-4846-b84d-b55469849d07">
+                    ASK PARTY
+                   </span>
+                  </td>
+                 </tr>
+                </table>  
+                <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
+                    <tr class="text-block-tr">
+                     <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 20px 0px 0px 0px;mso-line-height: exactly;line-height: 36px;letter-spacing: -0.6px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #ffffff;text-align: center;" align="center">
+                      <!--insert text bellow!-->
+                      <span></span><span style="font-size: 24px; font-family: 'DM Sans', Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="b9d602b0-1ae0-4846-b84d-b55469849d07">
+                       How to Create a ProfitableBusiness as a Solo-Entrepreneur
+                      </span>
+                     </td>
+                    </tr>
+                   </table>  
                </td>
               </tr>
              </table>
@@ -147,7 +485,7 @@
               <tr class="image-block-tr">
                <td class="image-block-td" align="center" valign="top" style="padding: 0px 0px 30px 0px;">
                 <a class="pc-font-alt" style="text-decoration: none;" href="https://designmodo.com/postcards/app">
-                 <img src="https://i.ibb.co/r0j8f7t/screencapture-mail-google-mail-u-0-2022-07-27-11-11-38.jpg" width="331" height="331" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:431px;max-width: 100%; height: auto;border-radius: 0px 0px 0px 0px;" alt="" />
+                 <img src="https://i.ibb.co/fXQrmzq/Screen-Shot-2022-08-31-at-11-59-25.png" width="331" height="331" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:1080px;max-width: 100%; height: auto;border-radius: 32px 32px 32px 32px;" alt="" />
                 </a>
                </td>
               </tr>
@@ -157,9 +495,10 @@
                <td class="text-block-wrapper-td" style="padding: 0px 0px 30px 0px;" valign="top" align="center">
                 <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
                  <tr class="text-block-tr">
-                  <td valign="top" class="text-block-td pc-font-alt" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #ffffff;text-align: center;" align="center">
+                  <td valign="top" class="text-block-td pc-font-alt" style="mso-line-height: exactly;line-height: 28px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #ffffff;text-align: center;" align="center">
                    <span></span>
-                   <div style="font-family: Dm Sans, Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="2251c906-81e3-403d-b113-bc74e1cf49a8">We know about <b>Product-Market Fit</b> and how crucial it is for any business to succeed. But as companies build businesses around and for cummunities, the <b>Community-Market</b> Fit factor is becoming increasingly important.</div>
+                   <div style="font-family: Dm Sans, Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="2251c906-81e3-403d-b113-bc74e1cf49a8">
+                    In partnership with:</div>
                   </td>
                  </tr>
                 </table>
@@ -169,6 +508,7 @@
             </td>
            </tr>
           </table>
+          
        <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
         <tr>
          <td style="padding: 0px 0px 0px 0px;">
@@ -176,280 +516,44 @@
            <tr>
             <td valign="top" class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35" style="padding: 40px 40px 40px 40px;border-radius: 0px;background-color: #ffffff;" bgcolor="#ffffff">
              <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-            
              </table>
-               <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-              <tr class="image-block-tr">
-               <td class="image-block-td" align="center" valign="top" style="padding: 0px 0px 30px 0px;">
-                <a class="pc-font-alt" style="text-decoration: none;" href="https://designmodo.com/postcards/app">
-                 <img src="https://i.ibb.co/rs6SLxw/screencapture-mailasdsa-google-mail-u-0-2022-07-27-11-11-38.jpg" width="331" height="331" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:361px;max-width: 100%; height: auto;border-radius: 32px 32px 32px 32px;" alt="" />
-                </a>
-               </td>
-              </tr>
-             </table>
+             <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
+                <tr class="text-block-tr">
+                 <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b; padding-bottom: 10px;">
+                  <div style="color: #2f4798;" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa">
+                     <span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">
+                        Wednesday, 14 Sept: Ask Party - How to create a profitable business as a solo-entrepreneur</span>
+                  </div>
+                 </td>
+                </tr>
+               </table>
              <table class="link-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
               <tr class="link-block-tr">
-               <td valign="top" class="link-block-td" align="center">
-                <a class="pc-font-alt" style="text-decoration: none;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;" href="https://designmodo.com/postcards/app"><span></span><span style="color: rgb(83, 83, 83);" class="hightlight" data-postcards-selection-id="e7b23ed1-fba6-4d8b-bfd0-8c88d0349536">Our community Experts on Wizly break this down so you can think about all the elements that go into Community building and monestising.</span><span></span></a>
+               <td valign="top" class="link-block-td" align="left">
+                <a class="pc-font-alt" style="text-decoration: none;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+                    <span style="color: rgb(83, 83, 83);" class="hightlight" data-postcards-selection-id="e7b23ed1-fba6-4d8b-bfd0-8c88d0349536">
+                        <b>Chris Edwards</b> is in town! Don't miss this unfiltered talk about her journey of building Honeycombers (she promises lots of practical advice and valuable behind the scenes insights) - grab your tickets before they sell out.
+                    </span></a>
                </td>
               </tr>
-             </table>
-            </td>
-           </tr>
-          </table>
-         </td>
-        </tr>
-       </table>           
-        <tr class="list-vertical-tr">
-            <td valign="top" class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35" style="padding: 40px 40px 40px 40px;border-radius: 0px;background-color: #ffffff;" bgcolor="#ffffff">
-                 <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <th valign="top" style="font-weight: normal; text-align: left;">
-                        <table class="list-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr class="list-wrapper-tr">
-                     <td class="list-wrapper-td" valign="top" style="padding: 0px 0px 40px 0px;">
-                      <table class="list" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                       <tr class="list-tr">
-                        <td class="list-td" valign="top">
-                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="list-horizontal pc-w620-view-vertical">
-                          <tr class="list-horizontal-tr">
-                           <th valign="top" width="50%" style="font-weight: normal; text-align: left; width: 20%;">
-                            <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                             <tr class="image-block-tr">
-                              <td class="image-block-td" valign="top">
-                               <a class="pc-font-alt" style="text-decoration: none;" href="https://wizly.app/">
-                                <img src="https://i.ibb.co/hyYmFjz/marc-nicholson.jpg" width="240" height="255" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:240px;max-width: 100%; height: auto;" alt="" />
-                               </a>
-                              </td>
-                             </tr>
-                            </table>
-                           </th>
-                           <th class="card-container-td" width="50%" valign="top" style="font-weight: normal; text-align: left; width: 50%;">
-                            <table class="card" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                             <tr class="card-tr">
-                              <td valign="top" class="card-td pc-w620-padding-20-0-0-0" style="padding: 0px 0px 0px 40px;">
-                               <table class="card-inner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                <tr>
-                                </tr>
-                                <tr>
-                                 <th class="text-block-container-td" valign="top" style="font-weight: normal; text-align: left;   padding: 0px 0px 10px 0px;">
-                                  <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
-                                   <tr class="text-block-tr">
-                                    <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
-
-                                     <span></span>
-                                     <div style="color: rgb(0, 0, 0);" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa"><span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">When you are creating a new brand, do you building brand or engineer the community?</span>
-
-                                      <div style="text-decoration: none; padding-top:10px;"><span></span><span style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px;" class="" data-postcards-selection-id="60fbe6b1-19fd-429c-b4cd-d5f81ba29126">Insights from Marc Nicholson, Founder, 1880</span><span></span>
-                                       <br>
-                                       <div>
-                                        <br>
-                                       </div>
-                                     
-                                      </div>
-                                     </div>
-                                     <div style="">
-                                      <div style="text-decoration: none;"><span></span>
-                                       <br>
-                                      </div>
-                                     </div>
-                                    </td>
-                                   </tr>
-                                  </table>
-                                 </th>
-                                </tr>
-                                <tr>
-                                </tr>
-                               </table>
-                              </td>
-                             </tr>
-                            </table>
-                           </th>
-                          </tr>
-                         </table>
-                        </td>
-                       </tr>
-                    <tr class="list-tr">
-                        <td class="list-td" valign="top">
-                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="list-horizontal pc-w620-view-vertical">
-                          <tr class="list-horizontal-tr">
-                           <th valign="top" width="50%" style="font-weight: normal; padding-bottom:12px;text-align: left; width: 20%;">
-                            <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                             <tr class="image-block-tr">
-                              <td class="image-block-td" valign="top">
-                               <a class="pc-font-alt" style="text-decoration: none;" href="https://wizly.app/">
-                                <img src="https://i.ibb.co/PCzSbNr/Mili-Semlani.jpg" width="240" height="255" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:240px;max-width: 100%; height: auto;" alt="" />
-                               </a>
-                              </td>
-                             </tr>
-                            </table>
-                           </th>
-                           <th class="card-container-td" width="50%" valign="top" style="font-weight: normal; text-align: left; width: 50%;">
-                            <table class="card" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                             <tr class="card-tr">
-                              <td valign="top" class="card-td pc-w620-padding-20-0-0-0" style="padding: 0px 0px 0px 40px;">
-                               <table class="card-inner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                <tr>
-                                </tr>
-                                <tr>
-                                 <th class="text-block-container-td" valign="top" style="font-weight: normal; text-align: left;   padding: 0px 0px 10px 0px;">
-                                  <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
-                                   <tr class="text-block-tr">
-                                    <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
-
-                                     <span></span>
-                                     <div style="color: rgb(0, 0, 0);" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa"><span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">How and when do you know your community is ready for monetisation?</span>
-
-                                      <div style="text-decoration: none; padding-top:10px;"><span></span><span style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px;" class="" data-postcards-selection-id="60fbe6b1-19fd-429c-b4cd-d5f81ba29126">Mili Semlani, Community Lead, e27</span><span></span>
-                                       <br>
-                                       <div>
-                                        <br>
-                                       </div>
-                                     
-                                      </div>
-                  
-
-                                     </div>
-                                     <div style="">
-                                      <div style="text-decoration: none;"><span></span>
-                                       <br>
-                                      </div>
-
-                                     </div>
-                                    </td>
-                                   </tr>
-                                  </table>
-                                 </th>
-                                </tr>
-                                <tr>
-                                </tr>
-                               </table>
-                              </td>
-                             </tr>
-                            </table>
-                           </th>
-                          </tr>
-                         </table>
-                        </td>
-                       </tr>
-                       <tr class="list-tr">
-                        <td class="list-td" valign="top">
-                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="list-horizontal pc-w620-view-vertical">
-                          <tr class="list-horizontal-tr">
-                           <th valign="top" width="50%" style="font-weight: normal; text-align: left; width: 20%;">
-                            <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                             <tr class="image-block-tr">
-                              <td class="image-block-td" valign="top">
-                               <a class="pc-font-alt" style="text-decoration: none;" href="https://wizly.app/">
-                                <img src="https://i.ibb.co/QP1MFzB/Sourabh-Goyal.jpg" width="240" height="255" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:240px;max-width: 100%; height: auto;" alt="" />
-                               </a>
-                              </td>
-                             </tr>
-                            </table>
-                           </th>
-                           <th class="card-container-td" width="50%" valign="top" style="font-weight: normal; text-align: left; width: 50%;">
-                            <table class="card" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                             <tr class="card-tr">
-                              <td valign="top" class="card-td pc-w620-padding-20-0-0-0" style="padding: 0px 0px 0px 40px;">
-                               <table class="card-inner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                <tr>
-                                </tr>
-                                <tr>
-                                 <th class="text-block-container-td" valign="top" style="font-weight: normal; text-align: left;   padding: 0px 0px 10px 0px;">
-                                  <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
-                                   <tr class="text-block-tr">
-                                    <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
-
-                                     <span></span>
-                                     <div style="color: rgb(0, 0, 0);" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa"><span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">How to build a cult-like following for your community?</span>
-
-                                      <div style="text-decoration: none; padding-top:10px;"><span></span><span style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px;" class="" data-postcards-selection-id="60fbe6b1-19fd-429c-b4cd-d5f81ba29126">Insights from Sourabh Goyal, Founder, Success Brew</span><span></span>
-                                       <br>
-                                       <div>
-                                        <br>
-                                       </div>                                    
-                                      </div>
-                                     </div>
-                                     <div style="">
-                                      <div style="text-decoration: none;"><span></span>
-                                       <br>
-                                      </div>
-
-                                     </div>
-                                    </td>
-                                   </tr>
-                                  </table>
-                                 </th>
-                                </tr>
-                                <tr>
-                                </tr>
-                               </table>
-                              </td>
-                             </tr>
-                            </table>
-                           </th>
-                          </tr>
-                         </table>
-                        </td>
-                       </tr>
-
-
-                       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      </table>
-
-                     </td>
-
-
-                   
-                
-               
-          
-
-
-
-
-
-
-
-
-             </table>
-
-
-             <table class="list" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-
               <tr class="list-tr">
-               <td class="list-td" valign="top" align="center">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="list-horizontal pc-w620-view-vertical">
-                 <tr class="list-horizontal-tr">
-                  <th class="button-wrapper-td" align="center" valign="top" style="font-weight: normal;">
-                   <table class="button" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate;">
-                    <tr class="button-tr">
-                     <td class="button-td" valign="middle" style="border-radius: 20px;background-color: #0000ff;padding: 14px 19px 14px 19px;height:24px;">
-                      <a class="pc-font-alt" href="https://web.wizly.app/my-profile/Hynd-Bouhia/6278128582ee4225c88fe93d" style="display: inline-block;text-decoration: none;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: 1.0px;color: #ffffff;">ASK YOUR FIRST QUESTION</a>
-                     </td>
-                    </tr>
-                   </table>
-                  </th>
-                 </tr>
-                </table>
-               </td>
-              </tr>
+                <td class="list-td" valign="top" align="center">
+                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="list-horizontal pc-w620-view-vertical">
+                  <tr class="list-horizontal-tr">
+                   <th class="button-wrapper-td" align="center" valign="top" style="font-weight: normal; padding-top: 20px;">
+                    <table class="button" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate;">
+                     <tr class="button-tr">
+                      <td class="button-td" valign="middle" style="border-radius: 20px;background-color: #1595e7;padding: 6px 19px 6px 19px;height:24px;">
+                       <a class="pc-font-alt" href="https://web.wizly.app/my-profile/Hynd-Bouhia/6278128582ee4225c88fe93d" style="display: inline-block;text-decoration: none;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: 1.0px;color: #ffffff;">
+                         SIGN UP</a>
+                      </td>
+                     </tr>
+                    </table>
+                   </th>
+                  </tr>
+                 </table>
+                </td>
+               </tr>
              </table>
             </td>
            </tr>
@@ -457,19 +561,595 @@
          </td>
         </tr>
        </table>
-     
-      
-<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+        <tr>
+         <td valign="top" class="pc-w520-padding-30-40-30-40 pc-w620-padding-35-50-35-50" style="padding: 40px 60px 0px 60px;border-radius: 0px;background-color: #304596;" bgcolor="#1b1b1b">
+          <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+           
+          </table>
+          <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+           <tr>
+            <td class="text-block-wrapper-td" style="padding: 0px 0px 30px 0px;" valign="top" align="center">
+             <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
+                 <tr class="text-block-tr">
+                  <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 20px 0px 0px 0px;mso-line-height: exactly;line-height: 36px;letter-spacing: -0.6px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #ffffff;text-align: center;" align="center">
+                   <!--insert text bellow!-->
+                   <span></span><span style="font-size: 34px; font-family: 'DM Sans', Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="b9d602b0-1ae0-4846-b84d-b55469849d07">
+                    How to speak with confidence and inspire the world
+                   </span>
+                  </td>
+                 </tr>
+                </table>  
+            </td>
+           </tr>
+          </table>
+          <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+           <tr class="image-block-tr">
+            <td class="image-block-td" align="center" valign="top" style="padding: 0px 0px 30px 0px;">
+             <a class="pc-font-alt" style="text-decoration: none;" href="https://designmodo.com/postcards/app">
+              <img src="https://i.ibb.co/0Zr9RtX/Screen-Shot-2022-08-31-at-12-21-18.png" width="331" height="331" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:1080px;max-width: 100%; height: auto;border-radius: 32px 32px 32px 32px;" alt="" />
+             </a>
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       </table>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
         <tr>
          <td style="padding: 0px 0px 0px 0px;">
           <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
            <tr>
             <td valign="top" class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35" style="padding: 40px 40px 40px 40px;border-radius: 0px;background-color: #ffffff;" bgcolor="#ffffff">
+             <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+             </table>
+             <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
+                <tr class="text-block-tr">
+                 <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b; padding-bottom: 10px;">
+                  <div style="color: #2f4798;" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa">
+                     <span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">
+                        Friday, 2 Sept: How to speak with confidence and inspire the world </span>
+                  </div>
+                 </td>
+                </tr>
+               </table>
+             <table class="link-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr class="link-block-tr">
+               <td valign="top" class="link-block-td" align="left">
+                <a class="pc-font-alt" style="text-decoration: none;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+                    <span style="color: rgb(83, 83, 83);" class="hightlight" data-postcards-selection-id="e7b23ed1-fba6-4d8b-bfd0-8c88d0349536">
+                        You started your business because you were passionate about changing the world. There is no one better to spread your message and inspire others to join your mission than you. In this Masterclass, Global Communication Specialist Heather Hansen will share strategies from her recently published book Unmuted that will help you to show up, speak up and inspire action in the world. You’ll learn how to be a conscious, confident and connected communicator that is better able to inspire and make people want to follow you – whether that means buy your product, engage your service or simply support your mission in the world.
+                    </span></a>
+               </td>
+              </tr>
+              <tr class="list-tr">
+                <td class="list-td" valign="top" align="center">
+                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="list-horizontal pc-w620-view-vertical">
+                  <tr class="list-horizontal-tr">
+                   <th class="button-wrapper-td" align="center" valign="top" style="font-weight: normal; padding-top: 20px;">
+                    <table class="button" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate;">
+                     <tr class="button-tr">
+                      <td class="button-td" valign="middle" style="border-radius: 20px;background-color: #1595e7;padding: 6px 19px 6px 19px;height:24px;">
+                       <a class="pc-font-alt" href="https://web.wizly.app/my-profile/Hynd-Bouhia/6278128582ee4225c88fe93d" style="display: inline-block;text-decoration: none;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: 1.0px;color: #ffffff;">
+                         SIGN UP</a>
+                      </td>
+                     </tr>
+                    </table>
+                   </th>
+                  </tr>
+                 </table>
+                </td>
+               </tr>
+             </table>
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       </table>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+        <tr>
+         <td valign="top" class="pc-w520-padding-30-40-30-40 pc-w620-padding-35-50-35-50" style="padding: 40px 60px 0px 60px;border-radius: 0px;background-color: #304596;" bgcolor="#1b1b1b">
+          <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+           
+          </table>
+          <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+           <tr>
+            <td class="text-block-wrapper-td" style="padding: 0px 0px 30px 0px;" valign="top" align="center">
+             <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
+                 <tr class="text-block-tr">
+                  <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 20px 0px 0px 0px;mso-line-height: exactly;line-height: 36px;letter-spacing: -0.6px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #ffffff;text-align: center;" align="center">
+                   <!--insert text bellow!-->
+                   <span></span><span style="font-size: 30px; font-family: 'DM Sans', Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="b9d602b0-1ae0-4846-b84d-b55469849d07">
+                    Is Perfomance Marketing Dead? Digital Advertising & The Future.
+                   </span>
+                  </td>
+                 </tr>
+                </table>  
+            </td>
+           </tr>
+          </table>
+          <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+           <tr class="image-block-tr">
+            <td class="image-block-td" align="center" valign="top" style="padding: 0px 0px 30px 0px;">
+             <a class="pc-font-alt" style="text-decoration: none;" href="https://designmodo.com/postcards/app">
+              <img src="https://i.ibb.co/zSTyR4N/Screen-Shot-2022-08-31-at-12-28-52.png" width="331" height="331" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:1080px;max-width: 100%; height: auto;border-radius: 32px 32px 32px 32px;" alt="" />
+             </a>
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       </table>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+        <tr>
+         <td style="padding: 0px 0px 0px 0px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+           <tr>
+            <td valign="top" class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35" style="padding: 40px 40px 40px 40px;border-radius: 0px;background-color: #ffffff;" bgcolor="#ffffff">
+             <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+             </table>
+             <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
+                <tr class="text-block-tr">
+                 <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b; padding-bottom: 10px;">
+                  <div style="color: #2f4798;" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa">
+                     <span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">
+                        Thursday, 8 Sep: Is Performance Marketing Dead? Digital Advertising & The Future</span>
+                  </div>
+                 </td>
+                </tr>
+               </table>
+             <table class="link-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr class="link-block-tr">
+               <td valign="top" class="link-block-td" align="left">
+                <a class="pc-font-alt" style="text-decoration: none;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+                    <span style="color: rgb(83, 83, 83);" class="hightlight" data-postcards-selection-id="e7b23ed1-fba6-4d8b-bfd0-8c88d0349536">
+                        If you’re in the marketing world, you’ve probably heard the rumours that performance marketing is dead, or that it is not working as well as it did before the Apple iOS change. But are the rumours true? Can entrepreneurs and SMEs still benefit from performance marketing strategies? What results are people getting from ad campaigns? Should we be considering newer platforms like TikTok for ad strategies? <b>Jasmine Mayhead</b>, one of Australia’s leading performance marketers, answers these questions and puts those pesky rumours to bed.
+                    </span></a>
+               </td>
+              </tr>
+              <tr class="list-tr">
+                <td class="list-td" valign="top" align="center">
+                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="list-horizontal pc-w620-view-vertical">
+                  <tr class="list-horizontal-tr">
+                   <th class="button-wrapper-td" align="center" valign="top" style="font-weight: normal; padding-top: 20px;">
+                    <table class="button" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate;">
+                     <tr class="button-tr">
+                      <td class="button-td" valign="middle" style="border-radius: 20px;background-color: #1595e7;padding: 6px 19px 6px 19px;height:24px;">
+                       <a class="pc-font-alt" href="https://web.wizly.app/my-profile/Hynd-Bouhia/6278128582ee4225c88fe93d" style="display: inline-block;text-decoration: none;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: 1.0px;color: #ffffff;">
+                         SIGN UP</a>
+                      </td>
+                     </tr>
+                    </table>
+                   </th>
+                  </tr>
+                 </table>
+                 <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                     <td class="text-block-wrapper-td" style="padding: 0px 0px 30px 0px;" valign="top" align="center">
+                      <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
+                          <tr class="text-block-tr">
+                           <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 40px 0px 10px 0px;mso-line-height: exactly;line-height: 36px;letter-spacing: -0.6px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #000;text-align: center;" align="center">
+                            <!--insert text bellow!-->
+                            <span></span><span style="font-size: 26px; font-family: 'DM Sans', Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="b9d602b0-1ae0-4846-b84d-b55469849d07">
+                                <hr>
+                                IMPORTANT UPDATE
+                            </span>
+                           </td>
+                            <tr class="link-block-tr">
+               <td valign="top" class="link-block-td" align="left">
+                <a class="pc-font-alt" style="text-decoration: none;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+                    <span style="color: rgb(83, 83, 83);" class="hightlight" data-postcards-selection-id="e7b23ed1-fba6-4d8b-bfd0-8c88d0349536">
+                        We've heard you and our calendar invites system will be changing! From next week onwards, you will not be recieving a gazillion Lift Off calendar invites from us, and instead - you will be recieving a personal login and the same link for all our regularly scheduled calls (thanks Marina Mathews for the suggestion!) including Lift Offs, Mediation, Journaling etc. So just hop on when you'd like! Masterclass invitations will remain the same.
+                    </span></a>
+               </td>
+              </tr>
+                          </tr>
+                         </table>  
+                     </td>
+                    </tr>
+                   </table>
+                   <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                     <td class="text-block-wrapper-td" style="padding: 0px 0px 0px 0px;" valign="top" align="center">
+                      <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
+                          <tr class="text-block-tr">
+                           <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 0px 0px 0px 0px;mso-line-height: exactly;line-height: 36px;letter-spacing: -0.6px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #000;text-align: center;" align="center">
+                            <!--insert text bellow!-->
+                            <span></span><span style="font-size: 26px; font-family: 'DM Sans', Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="b9d602b0-1ae0-4846-b84d-b55469849d07">
+                                EXCLUSIVES
+                            </span>
+                           </td>
+                          </tr>
+                         </table>  
+                     </td>
+                    </tr>
+                   </table>
+                </td>
+               </tr>
+             </table>
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       </table>              
+        <tr class="list-vertical-tr">
+            <td valign="top" class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35" style="padding: 0px 40px 40px 40px;border-radius: 0px;background-color: #ffffff;" bgcolor="#ffffff">
+                 <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                      <th valign="top" style="font-weight: normal; text-align: left;">
+                        <table class="list-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr class="list-wrapper-tr">
+                     <td class="list-wrapper-td" valign="top" style="padding: 0px 0px 0px 0px;">
+                      <table class="list" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                       <tr class="list-tr">
+                        <td class="list-td" valign="top">
+                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="list-horizontal pc-w620-view-vertical">
+                          <tr class="list-horizontal-tr">
+                           <th valign="top" width="50%" style="font-weight: normal; text-align: left; width: auto;">
+                            <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                             <tr class="image-block-tr">
+                              <td class="image-block-td" valign="top">
+                               <a class="pc-font-alt" style="text-decoration: none;" href="https://wizly.app/">
+                                <img src="https://i.ibb.co/WyCrHHs/unnamed.jpg" width="240" height="255" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:100%;max-width: 100%; height: auto;" alt="" />
+                               </a>
+                              </td>
+                             </tr>
+                            </table>
+                           </th>
+                           <th class="card-container-td" width="50%" valign="top" style="font-weight: normal; text-align: left; width: 50%;">
+                            <table class="card" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                             <tr class="card-tr">
+                              <td valign="top" class="card-td pc-w620-padding-20-0-0-0" style="padding: 0px 0px 0px 22px;">
+                               <table class="card-inner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                </tr>
+                                <tr>
+                                 <th class="text-block-container-td" valign="top" style="font-weight: normal; text-align: left;   padding: 0px 0px 22px 0px;">
+                                  <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
+                                   <tr class="text-block-tr">
+                                    <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+
+                                     <span></span>
+                                     <div style="color: rgb(0, 0, 0);" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa">
+                                        <span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">
+                                            Focus Fridays at Found8</span>
+
+                                      <div style="text-decoration: none; padding-top:10px;"><span></span><span style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;" class="" data-postcards-selection-id="60fbe6b1-19fd-429c-b4cd-d5f81ba29126">
+                                        Join us on Fridays to be super productive, wrap up your work without any distractions and prep for the coming week! It’s also a great opportunity for you to connect with the community IRL. This offer is available every Friday till 23rd Sept. Please <b>email or Whatsapp Megha</b> at 82004840 to book.</span><span></span>
+                                       <div>
+                                        
+                                       </div>
+                                     
+                                      </div>
+                                     </div>
+                                    
+                                    </td>
+                                   </tr>
+                                  </table>
+                                 </th>
+                                </tr>
+                                <tr>
+                                </tr>
+                               </table>
+                              </td>
+                             </tr>
+                            </table>
+                           </th>
+                          </tr>
+                         </table>
+                        </td>
+                       </tr>
+                       <tr class="list-wrapper-tr">
+                        <td class="list-wrapper-td" valign="top" style="padding: 0px 0px 0px 0px;">
+                         <table class="list" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr class="list-tr">
+                           <td class="list-td" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="list-horizontal pc-w620-view-vertical">
+                             <tr class="list-horizontal-tr">
+                              <th valign="top" width="50%" style="font-weight: normal; text-align: left; width: auto%;">
+                               <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr class="image-block-tr">
+                                 <td class="image-block-td" valign="top">
+                                  <a class="pc-font-alt" style="text-decoration: none;" href="https://wizly.app/">
+                                   <img src="https://i.ibb.co/rm5QxjT/unnamed.png" width="240" height="255" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:100%;max-width: 100%; height: auto;" alt="" />
+                                  </a>
+                                 </td>
+                                </tr>
+                               </table>
+                              </th>
+                              <th class="card-container-td" width="50%" valign="top" style="font-weight: normal; text-align: left; width: 50%;">
+                               <table class="card" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                <tr class="card-tr">
+                                 <td valign="top" class="card-td pc-w620-padding-20-0-0-0" style="padding: 0px 0px 0px 22px;">
+                                  <table class="card-inner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                   <tr>
+                                   </tr>
+                                   <tr>
+                                    <th class="text-block-container-td" valign="top" style="font-weight: normal; text-align: left;   padding: 0px 0px 22px 0px;">
+                                     <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
+                                      <tr class="text-block-tr">
+                                       <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+   
+                                        <span></span>
+                                        <div style="color: rgb(0, 0, 0);" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa">
+                                           <span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">
+                                            HoneyKids Asia International School Fair</span>
+   
+                                         <div style="text-decoration: none; padding-top:10px;"><span></span><span style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;" class="" data-postcards-selection-id="60fbe6b1-19fd-429c-b4cd-d5f81ba29126">
+                                            The fair is back - top international schools from Singapore and Malaysia all in one place, cool activities for the kids, plus a lifestyle pop-up stall area for the fam at our upcoming HoneyKids Asia International School Fair!
+                                            Sign up! .</span><span></span>
+                                          
+                                          <div>
+                                         
+                                          </div>
+                                        
+                                         </div>
+                                        </div>
+                                      
+                                       </td>
+                                      </tr>
+                                     </table>
+                                    </th>
+                                   </tr>
+                                   <tr>
+                                   </tr>
+                                  </table>
+                                 </td>
+                                </tr>
+                               </table>
+                              </th>
+                             </tr>
+                            </table>
+                           </td>
+                          </tr>
+                          <tr class="list-tr">
+                            <td class="list-td" valign="top">
+                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="list-horizontal pc-w620-view-vertical">
+                              <tr class="list-horizontal-tr">
+                               <th valign="top" width="50%" style="font-weight: normal; text-align: left; width: auto;">
+                                <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                 <tr class="image-block-tr">
+                                  <td class="image-block-td" valign="top">
+                                   <a class="pc-font-alt" style="text-decoration: none;" href="https://wizly.app/">
+                                    <img src="https://mcusercontent.com/78beeb22c53bbd3f70d6b9158/images/67a733df-b295-6ea7-7e85-a6eb649cc0d5.png" width="240" height="255" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:100%;max-width: 100%; height: auto;" alt="" />
+                                   </a>
+                                  </td>
+                                 </tr>
+                                </table>
+                               </th>
+                               <th class="card-container-td" width="50%" valign="top" style="font-weight: normal; text-align: left; width: 50%;">
+                                <table class="card" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                 <tr class="card-tr">
+                                  <td valign="top" class="card-td pc-w620-padding-20-0-0-0" style="padding: 0px 0px 0px 22px;">
+                                   <table class="card-inner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                     <th class="text-block-container-td" valign="top" style="font-weight: normal; text-align: left;   padding: 0px 0px 22px 0px;">
+                                      <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
+                                       <tr class="text-block-tr">
+                                        <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+    
+                                         <span></span>
+                                         <div style="color: rgb(0, 0, 0);" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa">
+                                            <span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">
+                                                Launchpad x Glamorous Giving</span>
+    
+                                          <div style="text-decoration: none; padding-top:10px;"><span></span><span style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;" class="" data-postcards-selection-id="60fbe6b1-19fd-429c-b4cd-d5f81ba29126">
+                                            Head over to Emperor's Attic on 7th Sept to enjoy an evening of inspiration and guidance on how to keep-up and navigate this post-covid era with awesome speakers including Amy Kunrojpanya and Emma Clough and our very own Megha Singh. Email Chantal to RSVP</span>
+                                          
+                                           <div>
+                                            
+                                           </div>
+                                         
+                                          </div>
+                                         </div>
+                                        
+                                        </td>
+                                       </tr>
+                                      </table>
+                                     </th>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </table>
+                               </th>
+                              </tr>
+                             </table>
+                            </td>
+                           </tr>
+                           <tr class="list-tr">
+                            <td class="list-td" valign="top">
+                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="list-horizontal pc-w620-view-vertical">
+                              <tr class="list-horizontal-tr">
+                               <th valign="top" width="50%" style="font-weight: normal; text-align: left; width: auto;">
+                                <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                 <tr class="image-block-tr">
+                                  <td class="image-block-td" valign="top">
+                                   <a class="pc-font-alt" style="text-decoration: none;" href="https://wizly.app/">
+                                    <img src="https://i.ibb.co/nRGGvkK/dateemail.png" width="240" height="255" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:100%;max-width: 100%; height: auto;" alt="" />
+                                   </a>
+                                  </td>
+                                 </tr>
+                                </table>
+                               </th>
+                               <th class="card-container-td" width="50%" valign="top" style="font-weight: normal; text-align: left; width: 50%;">
+                                <table class="card" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                 <tr class="card-tr">
+                                  <td valign="top" class="card-td pc-w620-padding-20-0-0-0" style="padding: 0px 0px 0px 22px;">
+                                   <table class="card-inner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                     <th class="text-block-container-td" valign="top" style="font-weight: normal; text-align: left;   padding: 0px 0px 22px 0px;">
+                                      <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
+                                       <tr class="text-block-tr">
+                                        <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+    
+                                         <span></span>
+                                         <div style="color: rgb(0, 0, 0);" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa">
+                                            <span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">
+                                             HoneyKids Asia International School Fair</span>
+    
+                                          <div style="text-decoration: none; padding-top:10px;"><span></span><span style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;" class="" data-postcards-selection-id="60fbe6b1-19fd-429c-b4cd-d5f81ba29126">
+                                            Is it in your calendar yet? Glamorous Giving Fashion & Homewares Clearance Sale is back! In support of United Women Singapore, our 13th edition will feature over 80 brands, all on sale!
+                                            <br>
+                                            <br>
+                                            28 & 29 September
+                                            <br>
+                                            Orchard Rendezvous Hotel .</span><span></span>
+                                           <br>
+                                           <br>
+                                           <div>
+                                            <br>
+                                           </div>
+                                         
+                                          </div>
+                                         </div>
+                                       
+                                        </td>
+                                       </tr>
+                                      </table>
+                                     </th>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </table>
+                               </th>
+                              </tr>
+                             </table>
+                            </td>
+                           </tr>
+                           <tr class="list-tr">
+                            <td class="list-td" valign="top">
+                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="list-horizontal pc-w620-view-vertical">
+                              <tr class="list-horizontal-tr">
+                               <th valign="top" width="50%" style="font-weight: normal; text-align: left; width: auto;">
+                                <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                 <tr class="image-block-tr">
+                                  <td class="image-block-td" valign="top">
+                                   <a class="pc-font-alt" style="text-decoration: none;" href="https://wizly.app/">
+                                    <img src="https://i.ibb.co/123Wg7h/unnamed-1.png" width="240" height="255" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:100%;max-width: 100%; height: auto;" alt="" />
+                                   </a>
+                                  </td>
+                                 </tr>
+                                </table>
+                               </th>
+                               <th class="card-container-td" width="50%" valign="top" style="font-weight: normal; text-align: left; width: 50%;">
+                                <table class="card" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                 <tr class="card-tr">
+                                  <td valign="top" class="card-td pc-w620-padding-20-0-0-0" style="padding: 0px 0px 0px 22px;">
+                                   <table class="card-inner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                     <th class="text-block-container-td" valign="top" style="font-weight: normal; text-align: left;   padding: 0px 0px 10px 0px;">
+                                      <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%">
+                                       <tr class="text-block-tr">
+                                        <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-16 pc-w620-lineHeight-26" style="mso-line-height: exactly;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+    
+                                         <span></span>
+                                         <div style="color: rgb(0, 0, 0);" class="" data-postcards-selection-id="9f80ddb4-0c29-44c3-b53c-cc1463a215aa">
+                                            <span style="font-weight: bold; font-style: normal;" class="" data-postcards-selection-id="a2bd012b-a9ea-4040-a56f-b1dcfd09b0b1">
+                                                Lumiere Runway</span>
+    
+                                          <div style="text-decoration: none; padding-top:10px;"><span></span><span style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;" class="" data-postcards-selection-id="60fbe6b1-19fd-429c-b4cd-d5f81ba29126">
+                                            Lumiere Fashion Show supports Fashion Designers by creating a contemporary and innovative approach to the traditional fashion show. They are currently looking for designers to partner with for their Hong Kong show on 26th Nov. Reach out to Kopal for more information </span><span></span>
+                                           
+                                           <div>
+                                            
+                                           </div>
+                                         
+                                          </div>
+                                         </div>
+                                       
+                                        </td>
+                                       </tr>
+                                      </table>
+                                     </th>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </table>
+                               </th>
+                              </tr>
+                              
+                             </table>
+                            </td>
+                           </tr>
+                    
+             </table>
+     
+     
+      
+<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+        <tr>
+         <td style="padding: 0px 0px 0px 0px;">
+           
+            <table class="text-block-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                 <td class="text-block-wrapper-td" style="padding: 0px 0px 0px 0px;" valign="top" align="center">
+                  <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
+                      <tr class="text-block-tr">
+                       <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 40px 0px 20px 0px;mso-line-height: exactly;line-height: 36px;letter-spacing: -0.6px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #000;text-align: center;" align="center">
+                        <!--insert text bellow!-->
+                        <span></span><span style="font-size: 26px; font-family: 'DM Sans', Helvetica, Arial, sans-serif;" class="" data-postcards-selection-id="b9d602b0-1ae0-4846-b84d-b55469849d07">
+                            <hr>
+                            COMMUNITY WINS
+                        </span>
+                       </td>
+                      </tr>
+                     </table>  
+                 </td>
+                </tr>
+               </table>
+               <table class="image-block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                <tr class="image-block-tr">
+                 <td class="image-block-td" align="center" valign="top" style="padding: 0px 0px 30px 0px;">
+                  <a class="pc-font-alt" style="text-decoration: none;" href="https://designmodo.com/postcards/app">
+                   <img src="https://i.ibb.co/3sHgZMn/community.jpg" width="331" height="331" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:1080px;max-width: 100%; height: auto;" alt="" />
+                  </a>
+                 </td>
+                </tr>
+               </table>
+               <tr class="link-block-tr">
+                <td valign="top" class="link-block-td" align="left">
+                 <a class="pc-font-alt" style="text-decoration: none;line-height: 24px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
+                     <span style="color: rgb(83, 83, 83);" class="hightlight" data-postcards-selection-id="e7b23ed1-fba6-4d8b-bfd0-8c88d0349536">
+                         <ul>
+                            <li>Our members have been featured! Have you read this months Honeycomber's articles? Starting a business in Singapore? 4 successful entrepreneurs share their best experiences and hardest challenges and Successful entrepreneurs share why Hong Kong is STILL a great place to build a business</li>
+                            <br>
+                            <li>🎙️👂 Looking for a podcast recommendation? Check out Growing Pains by HoneyKidsAsia which has featured several members including Marissa Nasution and Dr. Aparna Sundar already!</li>
+                            <br>
+                            <li>Debbie Watkins at www.welucy.com is creating a searchable business directory of women-owned microbusinesses in Singapore that we'll be promoting on our website as well as through a number of PR channels and a launch event, and if you have an online or physical business we’d like you to be part of this! Reach out to her via email</li>
+                            <br>
+                            <li>Jade Chaudey is celebrating one year of founding and running her marketing agency J Consulting! 🎉🎉</li>
+                            <br>
+                            <li>Cascade got a student and his brother into an international school after much difficulty. Why? 6 year-old William from mainland China was lagging his peers in English language competency. But over the summer, after working hard at reading and numeracy, he made great improvements! Congrats Vannessa!</li>
+                        </ul> 
+                        </span></a>
+                </td>
+               </tr>
+               
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+           <tr>
+            <td valign="top" class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35" style="padding: 40px 40px 40px 40px;border-radius: 0px;background-color: #fffff;" bgcolor="#ffffff">
              <table class="list-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
               <tr class="list-wrapper-tr">
                <td class="list-wrapper-td" valign="top" style="padding: 0px 0px 17px 0px;">
                 <table class="list" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                        <tr class="line-tr">
+                        
                <!--[if gte mso 9]>
                     <td class="line-td" style="line-height: 1px; font-size: 1px; border-bottom: 1px solid #000000;" height="1" valign="top">&nbsp;</td>
                 <![endif]-->
@@ -493,28 +1173,28 @@
                  <img src="https://s1.designmodo.com/postcards/image-0-1655331327.png" width="130" height="29" style="border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:130px;max-width: 100%; height: auto;" alt="" />
                 </a>
                 <tr class="text-block-tr">
-                  <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 0px 0px 0px 0px;mso-line-height: exactly;line-height: 46px;letter-spacing: -0.6px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #888888;text-align: center;" align="center">
-                   You Growth Platform</td>
-                 </tr>
-               </td>
-              </tr>
-             </table>
-         </th>
-         </tr>
-     </table>
- </td>
-</tr>
-</table>
- <tr class="line-tr">
-               <!--[if gte mso 9]>
-                    <td class="line-td" style="line-height: 1px; font-size: 1px; border-bottom: 1px solid #000000;" height="1" valign="top">&nbsp;</td>
-                <![endif]-->
-               <!--[if !gte mso 9]><!-- -->
-               <td class="line-td" style="line-height: 1px; font-size: 1px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);" height="1" valign="top">&nbsp;</td>
-               <!--<![endif]-->
-              </tr>
-</td>
-</tr>
+                  <td valign="top" class="text-block-td pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40" style="padding: 0px 0px 0px 0px;mso-line-height: exactly;line-height: 46px;letter-spacing: 0px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 28px;font-weight: 800;color: #565656;text-align: center;" align="center">
+                       You&nbsp;Growth&nbsp;Platform</td>
+                     </tr>
+                   </td>
+                  </tr>
+                 </table>
+             </th>
+             </tr>
+         </table>
+                 </td>
+                </tr>
+                </table>
+                 <tr class="line-tr">
+                               <!--[if gte mso 9]>
+                                    <td class="line-td" style="line-height: 1px; font-size: 1px; border-bottom: 1px solid #000000;" height="1" valign="top">&nbsp;</td>
+                                <![endif]-->
+                               <!--[if !gte mso 9]><!-- -->
+                               <td class="line-td" style="line-height: 1px; font-size: 1px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);" height="1" valign="top">&nbsp;</td>
+                               <!--<![endif]-->
+                              </tr>
+                    </td>
+                    </tr>
 
 
        <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
@@ -522,7 +1202,7 @@
          <td style="padding: 0px 0px 0px 0px;">
           <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
            <tr>
-            <td valign="top" class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35" style="padding: 40px 40px 0px 40px;border-radius: 0px;background-color: #ffffff;" bgcolor="#ffffff">
+            <td valign="top" class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35" style="padding: 40px 40px 0px 40px;border-radius: 0px;">
              <table class="list-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
               <tr class="list-wrapper-tr">
                <td class="list-wrapper-td" valign="top" style="padding: 0px 0px 20px 0px;">
@@ -579,13 +1259,18 @@
                <td class="text-block-wrapper-td" style="padding: 0px 0px 14px 0px;" valign="top" align="center">
                 <table class="text-block" border="0" cellpadding="0" role="presentation" width="100%" align="center">
                  <tr class="text-block-tr">
-                  <td valign="top" class="text-block-td pc-font-alt" style="padding: 0px 60px 0px 60px;mso-line-height: exactly;line-height: 20px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: normal;color: #9b9b9b;text-align: center;" align="center">
+                  <td valign="top" class="text-block-td pc-font-alt" style="padding: 0px 60px 0px 60px;mso-line-height: exactly;line-height: 20px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: normal;color: #565656;text-align: center;" align="center">
                    Wizly Corp Pte Ltd, 19-08,
                    <div>Prudential Towers, 30 Cecil Street, Singapore.</div>
                   </td>
                  </tr>
                   <tr class="text-block-tr">
-                     <td valign="top" class="text-block-td pc-font-alt" style="padding: 16px 60px 0px 60px;mso-line-height: exactly;line-height: 20px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: normal;color: #9b9b9b;text-align: center;" align="center">
+                     <td valign="top" class="text-block-td pc-font-alt" style="padding: 16px 60px 0px 60px;mso-line-height: exactly;line-height: 20px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: normal;color: #d1d1d1;text-align: center;" align="center">
+                         <a href="http://whatis.customeriomail.com/view-in-browser.html">View this email online</a>
+                     </td>
+                 </tr>
+                  <tr class="text-block-tr">
+                     <td valign="top" class="text-block-td pc-font-alt" style="padding: 16px 60px 0px 60px;mso-line-height: exactly;line-height: 20px;letter-spacing: -0.2px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: normal;color: #d1d1d1!important; text-decoration: none: imp !important;; text-decoration:none; ;text-align: center;" align="center">
                          <a href="https://links.customer.io/unsubscribe">Unsubscribe</a>
                      </td>
                  </tr>
@@ -605,9 +1290,14 @@
    </td>
   </tr>
  </table>
+ 
+
+ 
+
  <!-- Fix for Gmail on iOS -->
  <div class="pc-gmail-fix" style="white-space: nowrap; font: 15px courier; line-height: 0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
  </div>
+ 
 </body>
 
 </html>
